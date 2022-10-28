@@ -1,0 +1,134 @@
+<!-- Autor Raúl Gonzálvez Mondéjar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>Ejercicio tablas</header>
+    <nav>
+        <ul>
+            <li ><button id="versiones-html">1.- Versiones HTML</button></li>
+            <li ><button id="versiones-css">2.- Versiones CSS</button></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="tabla-html">
+            <div class="fila">
+                <div class="celda1"><p>Versión HTML</p></div>
+                <div class="celda2"><p>Fecha creación</p></div>
+                <div class="celda3"><p>Características</p></div>
+            </div>
+            <div class="fila">
+                <div class="celda1"><p>HTML 2.0</p></div>
+                <div class="celda2"><p>1990</p></div>
+                <div class="celda3">
+                    <p>
+                        Basado en SGML, constituye una definición completamente limpia del lenguaje, sin soporte para tablas,
+                        que no incluye ningún elemento puramente presentacional, por tanto haciendo hincapié en la directividad
+                        del lenguaje hacia la definición de un marco estructural puro para el contenido y coherente enfocado hacia
+                        la funcionalidad hipertextual
+                    </p>
+                </div>
+                </div>
+                <div class="fila">
+                    <div class="celda1"><p>HTML 4.0</p></div>
+                    <div class="celda2"><p>1998</p></div>
+                    <div class="celda3">
+                        <p>
+                            El lenguaje HTML4 es una especificación del lenguaje html aprobada por World Wide Web Consortium,
+                            en la universidad de Harvard en 1998. 
+                        </p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda1"><p>HTML 5</p></div>
+                    <div class="celda2"><p>2014</p></div>
+                    <div class="celda3">
+                        <p>HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web,
+                            HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), 
+                            conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML
+                            (application/xhtml+xml). Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. 
+                            La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
+                        </p>
+                    </div>
+                </div>
+        </div> 
+
+        <div id="tabla-css">
+            <div class="fila">
+                <div class="celda4"><p>Versión CSS</p></div>
+                <div class="celda5"><p>Fecha creación</p></div>
+                <div class="celda6"><p>Características</p></div>
+            </div>
+            <div class="fila">
+                <div class="celda4"><p>CSS1</p></div>
+                <div class="celda5"><p>Diciembre de 1995</p></div>
+                <div class="celda6"><p>Algunas de las funcionalidades que ofrece son:
+                    Propiedades de las fuentes, como tipo, tamaño, énfasis...
+                    Color de texto, fondos, bordes u otros elementos.
+                    Atributos del texto, como espaciado entre palabras, letras, líneas, etcétera.
+                    Alineación de textos, imágenes, tablas u otros.
+                    Propiedades de caja, como margen, borde, relleno o espaciado.
+                    Propiedades de identificación y presentación de listas.</p></div>
+            </div>
+            <div class="fila">
+                <div class="celda4"><p>CSS2</p></div>
+                <div class="celda5"><p>Mayo de 1998</p></div>
+                <div class="celda6"><p>Como ampliación de CSS1, se ofrecieron, entre otras:
+                    Las funcionalidades propias de las capas (div) como de posicionamiento relativo/absoluto/fijo, niveles (z-index), etcétera.
+                    El concepto de "media types".
+                    Soporte para las hojas de estilo auditivas.
+                    Texto bidireccional, sombras, etcétera.</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="celda4"><p>CSS3</p></div>
+                <div class="celda5"><p>Mayo de 1998</p></div>
+                <div class="celda6"><p>A diferencia de CSS2, que fue una única especificación que definía varias funcionalidades, 
+                    CSS3 está dividida en varios documentos separados, llamados "módulos".
+                    Cada módulo añade nuevas funcionalidades a las definidas en CSS2, de manera que se preservan las anteriores 
+                    para mantener la compatibilidad.
+                    Los trabajos en el CSS3, comenzaron a la vez que se publicó la recomendación oficial de CSS2, 
+                    y los primeros borradores de CSS3 fueron liberados en junio de 1999.                        
+                    Debido a la modularización del CSS3, diferentes módulos pueden encontrarse en diferentes estados de su desarrollo,
+                    de forma que a fechas de noviembre de 2011, hay alrededor de cincuenta módulos publicados,
+                    tres de ellos se convirtieron en recomendaciones oficiales de la W3C en 2011: "Selectores", "Espacios de nombres" y "Color".
+                    Algunos módulos, como "Fondos y colores", "Consultas de medios" o "Diseños multicolumna" 
+                    están en fase de "candidatos", y considerados como razonablemente estables, a finales de 2011, 
+                    y sus implementaciones en los diferentes navegadores son señaladas con los prefijos del motor del mismo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Con visibility lo ocultas o lo muestras
+        // Con display lo pones o lo quitas (espacio incluido)
+        const mostrarHtml = document.getElementById("versiones-html");
+        mostrarHtml.addEventListener('click', (e) => {
+            // document.getElementById("tabla-html").style.visibility = 'visible';
+            document.getElementById("tabla-html").style.display = 'table';
+            // document.getElementById("tabla-css").style.visibility = 'hidden';
+            document.getElementById("tabla-css").style.display = 'none';
+            e.stopPropagation();
+            e.preventDefault();
+        });
+        
+        const mostrarCss = document.getElementById("versiones-css");
+        mostrarCss.addEventListener('click', (e) => {
+            // document.getElementById("tabla-css").style.visibility = 'visible';
+            document.getElementById("tabla-css").style.display = 'table';
+            // document.getElementById("tabla-html").style.visibility = 'hidden';
+            document.getElementById("tabla-html").style.display = 'none';
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

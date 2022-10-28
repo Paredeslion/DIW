@@ -1,0 +1,14 @@
+/* Autor: Raúl Gonzálvez Mondéjar */
+
+#caja-fija {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #333;
+    background-color: #6cf;
+}
+    
+#caja-fija p {
+    margin: 0;
+}

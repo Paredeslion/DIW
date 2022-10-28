@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(145, 90, 235);
+}
+
+#thumbnails {
+    width: auto;
+    height: auto;
+}
+
+#thumbnails ul {
+    list-style: none;
+    margin-top: auto;
+}
+
+#thumbnails ul li {
+    margin-top: 50px;
+}
+
+.gallery {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 20%;
+    top: 50px;
+    transition: visibility 1s linear, opacity 1s linear;
+}
+
+a:hover .gallery {
+    visibility: visible;
+    opacity: 1;
+}

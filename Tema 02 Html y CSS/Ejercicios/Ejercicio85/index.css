@@ -1,0 +1,19 @@
+/* Explicación: Hacéis los dos párrafos de letra capital de las dos formas diferente, es decir, con y sin :first-letter, 
+tal como pone en la página. Es copiar lo que hay ahí y entregarlo */
+/* Autor: Raúl Gonzálvez Mondéjar */
+
+span.capital {
+    background-color: pink;
+    color: red;
+    float: left;
+    font-family: monospace;
+    font-size: 400%;
+}
+
+p.capital:first-letter {
+    background-color: pink;
+    color: red;
+    float: left;
+    font-family: monospace;
+    font-size: 400%;
+}

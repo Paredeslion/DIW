@@ -1,0 +1,83 @@
+// Menus de navegacion y footer
+@import "_variables";
+@import "_functions";
+@import "_mixins";
+
+.nav {
+    background-color: $colorBackground;
+    width: 100%;
+    @include media() {
+        // display: none;
+        opacity: 0;
+        height: 0vh;
+        @include transitions (all, 0.5s, ease);
+        @include flex(row, nowrap, center, center);
+
+        &.activo {
+            // display: flex;
+            opacity: 1;
+            height: 50vh;
+        }
+    }
+
+    .ul {
+        list-style: none;
+        @include flex(row, wrap, center, center);
+        @include media() {
+            flex-direction: column;
+        }
+    }
+    
+    .li {
+        font-size: 30px;
+        margin: 0.5em;
+        @include media() {
+            margin: 1em 0;
+        }
+    }
+    
+    .a {
+        text-decoration: none;
+        color: $colorText;
+        @include transitions (padding, 0.4s, ease-out);
+    
+        &:hover {
+            background-color: $colorBackgroundHover;
+            color: $colorTextHover;
+            @include animations (iluminar, 0s, linear);
+            padding-top: 10px;
+        }
+    }
+}
+
+.footer {
+    color: white;
+
+    nav {
+        width: 100%;
+        ul {
+            list-style: none;
+            @include flex( row, wrap, center, center );
+
+            li {
+                font-size: 20px;
+                margin: 0.5em;
+
+                a {
+                    text-decoration: none;
+                    color: $colorText;
+
+                    &:hover {
+                        background-color: $colorBackgroundHover;
+                    color: $colorTextHover;
+                    animation: iluminar 0s linear;
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        text-align: center;
+    }
+}

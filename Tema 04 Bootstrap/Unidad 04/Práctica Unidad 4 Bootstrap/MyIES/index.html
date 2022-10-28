@@ -1,0 +1,167 @@
+<!-- Autor Raúl Gonzálvez Mondéjar -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi centro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/custom.css">
+    <!-- Inserta aquí el CSS de bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    
+</head>
+<body>
+    <!-- inserta aquí el div container-fluid para que ocupe toda la página-->
+    <div id="contenido" class="container-fluid">
+        <div class="row">
+            <!-- Inserta el menú, debes tener en cuenta que el menú deberá ocupar todo el ancho de la pantalla siempre, el color que usaremos será 
+            el de la clase bg-primary -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary col-12">
+                <div class="container-fluid">
+                    <a href="#" class="nav-brand text-white" id="mi-instituto" style="padding: 20px;">Mi instituto</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#desplegable" aria-controls="desplegable" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="desplegable">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Nuestro centro</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Enseñanzas
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">DAW</a>
+                                    <a class="dropdown-item" href="#">DAM</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumnado
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="#">Calendario escolar</a>
+                                    <a class="dropdown-item" href="#">Servicios</a>
+                                    <a class="dropdown-item" href="#">Documentos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Profesorado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Moodle</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Inserta otra fila aquí, y dale un padding de 20px -->
+        <div class="row fila2 p-20">
+            <!-- El login será de tamaño 3 mientras que la resolución no sea xs que pasará a ocupar toda la pantalla -->
+            <div class="col-12 col-sm-3">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12">Submit</button>
+                </form>
+            </div>
+            <!-- El contenido será de tamaño 9 mientras que la resolución no sea xs que pasará a ocupar toda la pantalla -->
+            <!-- Importante, este contenido será realizado en forma collapse/accordion toggle item, donde por defecto se verá al principio sólo 
+            la información de novedades, pero si pinchamos sobre cualquier item (novedades, estudios ofertados o contacto se desplegará
+            y nos mostrará su contenido o lo ocultará-->
+            <div id="accordion" class="col-12 col-sm-9">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h1 class="mb-0"><i class="icon icon-news" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i>
+                    Novedades
+                    </h1>
+                  </div>                  
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
+                            vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
+                            nisi vel arcu. Sed porttitor eros lorem, ac pulvinar turpis scelerisque at. Praesent finibus nulla sit
+                            amet tortor varius, non elementum purus viverra. Suspendisse quis ipsum orci. Praesent gravida turpis
+                            felis, eu blandit magna egestas nec. Duis vulputate ornare nisi eu ultricies. Aliquam blandit luctus
+                            enim eget pharetra. Sed eleifend, tellus sed auctor condimentum, justo urna mollis enim, ut consectetur
+                            tortor orci et leo. In vitae magna in velit dapibus sollicitudin. Nam vitae dui convallis, tempor lacus
+                            et, placerat nibh. Vivamus vehicula, nunc lacinia venenatis tempor, purus magna euismod diam, a volutpat
+                            lacus ligula nec ante. Cras eget ultrices urna. Nullam at massa rhoncus, malesuada massa eu, vulputate
+                            quam. Ut vel rutrum justo. Donec quis lorem quam.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h1 class="mb-0">
+                      <i class="icon icon-studies" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      </i>
+                      Estudios ofertados
+                    </h1>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
+                            vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
+                            nisi vel arcu. Sed porttitor eros lorem, ac pulvinar turpis scelerisque at. Praesent finibus nulla sit
+                            amet tortor varius, non elementum purus viverra. Suspendisse quis ipsum orci. Praesent gravida turpis
+                            felis, eu blandit magna egestas nec. Duis vulputate ornare nisi eu ultricies. Aliquam blandit luctus
+                            enim eget pharetra. Sed eleifend, tellus sed auctor condimentum, justo urna mollis enim, ut consectetur
+                            tortor orci et leo. In vitae magna in velit dapibus sollicitudin. Nam vitae dui convallis, tempor lacus
+                            et, placerat nibh. Vivamus vehicula, nunc lacinia venenatis tempor, purus magna euismod diam, a volutpat
+                            lacus ligula nec ante. Cras eget ultrices urna. Nullam at massa rhoncus, malesuada massa eu, vulputate
+                            quam. Ut vel rutrum justo. Donec quis lorem quam.
+                        </p>
+                    </div>
+                  </div>                
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h1 class="mb-0">
+                      <i class="icon icon-contact" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      </i>
+                      Contacto
+                    </h1>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
+                            vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
+                            nisi vel arcu. Sed porttitor eros lorem, ac pulvinar turpis scelerisque at. Praesent finibus nulla sit
+                            amet tortor varius, non elementum purus viverra. Suspendisse quis ipsum orci. Praesent gravida turpis
+                            felis, eu blandit magna egestas nec. Duis vulputate ornare nisi eu ultricies. Aliquam blandit luctus
+                            enim eget pharetra. Sed eleifend, tellus sed auctor condimentum, justo urna mollis enim, ut consectetur
+                            tortor orci et leo. In vitae magna in velit dapibus sollicitudin. Nam vitae dui convallis, tempor lacus
+                            et, placerat nibh. Vivamus vehicula, nunc lacinia venenatis tempor, purus magna euismod diam, a volutpat
+                            lacus ligula nec ante. Cras eget ultrices urna. Nullam at massa rhoncus, malesuada massa eu, vulputate
+                            quam. Ut vel rutrum justo. Donec quis lorem quam.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer w-100 bg-primary text-white">Curso Cefire - Diseño de interfaces web: Bootstrap, Sass y compass</footer>
+    <!-- Inserta aquí los JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+</body>
+</html>

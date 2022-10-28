@@ -1,0 +1,8 @@
+$colorText: white;
+$colorBackground: black;
+$colorTextHover: saturate($colorText, 40%);
+$colorBackgroundHover: lighten($colorBackground, 10%);
+$colorArticleBackground: lighten($colorBackground, 20%);
+$colorTitle: darken($colorBackground, 10%);
+$textSizes: small medium large;
+$baseTextSize: 8px;

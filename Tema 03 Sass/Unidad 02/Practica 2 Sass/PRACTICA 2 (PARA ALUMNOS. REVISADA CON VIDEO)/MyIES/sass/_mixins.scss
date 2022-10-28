@@ -1,0 +1,27 @@
+@mixin color ($colorText, $colorTextHover){
+    color: $colorText;
+    background-color: $colorTextHover;
+}
+
+@mixin colorHover ($colorTextHover, $colorBackgroundHover){
+    color: $colorTextHover;
+    background-color: $colorBackgroundHover;
+}
+
+@mixin box-sizing ($x){
+    -webkit-box-sizing: $x;
+    -moz-box-sizing: $x;
+    box-sizing: $x;
+}
+
+@mixin transitions ($property, $duration, $timing: linear){
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+}
+
+@mixin animations ($name, $duration, $timing: linear) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+}

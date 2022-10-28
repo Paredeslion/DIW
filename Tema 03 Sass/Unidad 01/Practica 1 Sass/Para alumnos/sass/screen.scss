@@ -1,0 +1,33 @@
+// created by Raul Gonzalvez Mondejar at 2021/11/05 10:39.
+
+$colourOrange: #FF8000;
+$colourBlue: #2E5F64;
+
+#primero {
+    padding: 20px;
+    .destacado {
+        color: $colourOrange;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 6px;
+    }
+}
+
+#segundo {
+    padding: 20px;
+
+    .destacado {
+        color: $colourBlue;
+        font-size: 1.4rem;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    // not se aplica a un selector y posteriormente la pseudoclase que no quiero que afecte a not
+     p:not(.destacado)::first-line {
+        font-style: italic;
+    }
+}
+
+#parrafos {
+    text-align: right;
+}

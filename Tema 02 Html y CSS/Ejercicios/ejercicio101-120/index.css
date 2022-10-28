@@ -1,0 +1,140 @@
+/* Propiedad display:  página Web con menu y tablas
+
+Se trata de hacer una página Web que tenga un menú arriba horizontal con dos enlaces:
+1-Versiones HTML              2-Versiones CSS
+Si se pincha en el primer enlace(1-Versiones HTML) aparecerá abajo de la barra de enlaces
+una tabla con estas tres columnas:
+VERSION HTML * FECHA CREACIÓN * CARACTERÍSTICAS.
+En ella aparecerán las diferentes versiones de HTML y sus características
+
+Si se pincha en el segundo enlace( 2-Versiones CSS) aparecerá abajo de la barra de enlaces
+una tabla con estas tres columnas:
+VERSION CSS * FECHA CREACIÓN * CARACTERÍSTICA
+Puntuación: Debe de aparecer  casi todas(todas) las propiedades de estilos CSS de las tablas
+(no es necesario que aparezcan todos los valores de esas propiedades).  */
+
+/* Autor Raúl Gonzálvez Mondéjar */
+
+#contenedor {
+  width: auto;
+}
+
+body {
+  background-color: bisque;
+}
+
+nav {
+  font-size: 20px;
+  display: flex;
+  margin: auto;
+}
+
+nav ul {
+  height: 40px;
+  list-style: none;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+}
+
+nav ul li {
+  height: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#versiones-html {
+  background-color: greenyellow;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#versiones-css {
+  background-color: lightblue;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+header {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tabla-html {
+  padding-left: 50px;
+  float: left;
+  display: table;
+  table-layout: fixed;
+  width: 800px;
+  border-spacing: 10px;
+  vertical-align: middle;
+  border-collapse: separate;
+  /* visibility: hidden; */
+  display: table-caption;
+}
+
+.celda1, .celda2, .celda3 {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid black;
+  width: 200px;
+  empty-cells: hide;
+}
+
+.celda1 {
+background-color: lightblue;
+}
+
+.celda2 {
+  background-color: lightcyan;
+}
+
+.celda3 {
+  background-color: lightskyblue;
+}
+
+#tabla-css {
+  padding-right: 50px;
+  right: 50px;
+  float: right;
+  display: table;
+  table-layout: fixed;
+  width: 800px;
+  border-spacing: 10px;
+  vertical-align: middle;
+  /* visibility: hidden; */
+}
+
+.celda4, .celda5, .celda6 {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid black;
+  width: 300px;
+  empty-cells: hide;
+}
+
+.celda4 {
+  background-color: lightgreen;
+  }
+  
+.celda5 {
+  background-color: lightseagreen
+}
+
+.celda6 {
+  background-color: lightsteelblue;
+}
+
+.fila {
+  display: table-row;
+}

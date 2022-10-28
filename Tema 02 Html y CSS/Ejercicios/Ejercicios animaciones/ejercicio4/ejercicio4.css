@@ -1,0 +1,19 @@
+.contenedor {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    display: block;
+    margin: auto;
+    transition: 5s ease-in-out;
+}
+
+.contenedor img {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    transition: opacity 2s ease-in-out;
+}
+
+.contenedor img.imagen-arriba:hover {
+    opacity: 0;
+}

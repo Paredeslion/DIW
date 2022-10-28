@@ -1,0 +1,58 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+// En esta hoja colores, keyframes, body, header y footer
+
+@import compass/utilities/sprites
+@import ../img/*.png
+
+// @include all-images-sprites;
+@import _variables
+@import _mixins
+@import _contenido
+@import _menu
+
+@keyframes iluminar
+  from
+    color: $colorText
+    background-color: #15a
+
+  to
+    color: white
+    background-color: #166cd8
+
+body
+  padding: 0px
+  margin: 0px
+
+  $theme: light
+
+  @if $theme == dark
+    background-color: #138
+    color: #ddf
+  @else
+    background-color: #ddf
+    color: #138
+
+header
+  padding-top: 12px
+  padding-right: 30px
+  color: #444
+  font-size: 1.8em
+  background-color: #eee
+  font-weight: bold
+  text-shadow: 1px 1px 2px #aaa
+  font-family: Georgia, 'Times New Roman', Times, serif
+
+footer
+  color: #eee
+  background-color: #15a
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  position: fixed
+  width: 100%
+  bottom: 0px
+  padding: 5px

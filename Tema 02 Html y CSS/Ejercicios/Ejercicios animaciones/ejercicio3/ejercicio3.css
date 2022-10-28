@@ -1,0 +1,45 @@
+#foto1 {
+    float: left;
+    display: table;
+    border: thin solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+#foto1 figcaption {
+    display: table-caption;
+    caption-side:top;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 20px;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+#foto1 figcaption:hover {
+    transform: translateY(20px);
+}
+
+#foto2 {
+    float: right;
+    display: table;
+    border: thin solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+#foto2 figcaption {
+    display: table-caption;
+    caption-side:top;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    height: 20px;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+#foto2 figcaption:hover {
+    transform: translateY(20px);
+}

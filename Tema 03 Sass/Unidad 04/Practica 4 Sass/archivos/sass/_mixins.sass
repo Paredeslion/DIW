@@ -1,0 +1,33 @@
+=color($colorText, $colorTextHover)
+  color: $colorText
+  background-color: $colorBackground
+
+=colorHover($colorTextHover, $colorBackgroundHover)
+  color: $colorTextHover
+  background-color: $colorBackgroundHover
+
+=box-sizing($x)
+  -webkit-box-sizing: $x
+  -moz-box-sizing: $x
+  box-sizing: $x
+
+=transitions($property, $duration, $timing: linear)
+  transition-property: $property
+  transition-duration: $duration
+  transition-timing-function: $timing
+
+=animations($name, $duration, $timing: linear)
+  animation-name: $name
+  animation-duration: $duration
+  animation-timing-function: $timing
+
+$medium: 1024px
+$small: 800px
+
+=respond-to($size)
+  @if $size == $medium
+    @media (max-width: 1024px)
+      @content
+  @else if $size == $small
+    @media (max-width: 800px)
+      @content

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 3 Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        div[class^='col-']{
+        border: 5px solid white;
+        height: 5em;
+        }
+        
+        .header {
+            background-color: #29ff2e;
+            text-align: left;
+            font-size: large;
+        }
+
+        #footer1{
+            background-color: #fefe38; 
+            text-align: right; 
+            font-size: large; 
+            font-style: italic;
+        }
+
+        #footer2 {
+            background-color: #fefe38; 
+            text-align: left; 
+            font-size: large; 
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                background-color: #2cfffd;
+            }
+
+            #uno {
+                text-align: left;
+            }
+
+            #dos {
+                text-align: right;
+            }
+
+            #tres {
+                background-color: #29ff2e;
+            }
+
+            #footer1{
+                text-align: center;
+            }
+
+            #footer2 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header {
+                background-color: #fcb384;
+                text-align: center;
+            }
+
+            #uno {
+                text-align: left;
+            }
+
+            #dos {
+                background-color: #2cfffd;
+                text-align: center;
+            }
+
+            #tres {
+                text-align: right;
+                background-color: red;
+            }
+        }
+
+        .numeros {
+            background-color: red;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 header">Header</div>
+        </div>
+        <div class="row numeros">
+            <div class="col-12 col-sm-6 col-md-4" id="uno">1</div>
+            <div class="col-12 col-sm-6 col-md-4" id="dos">2</div>
+            <div class="col-12 col-sm-12 col-md-4" id="tres">3</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6" id="footer1">Footer 1</div>
+            <div class="col-12 col-md-6" id="footer2">Footer 2</div>
+        </div>
+    </div>
+    <!-- Scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </body>
+</html>

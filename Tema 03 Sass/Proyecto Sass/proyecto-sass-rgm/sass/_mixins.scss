@@ -1,0 +1,74 @@
+// Creo un mixin para hacer flex rápidamente
+// direccion wrap justificar contenido y alinear contenido
+@mixin flex ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Creo un media para el botón en tamaños pequeños
+@mixin media () {
+    @media screen and (max-width: 576px) {
+        // Con content puedo reutilizar y poder meter valores dentro de un mixin
+        @content;
+    }
+}
+
+// Creo un mixin para las animaciones
+@mixin animations ($name, $duration, $timing: linear) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+}
+
+// Creo un mixin para las transiciones
+@mixin transitions ($property, $duration, $timing: linear){
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+}
+
+// Creo un mixin para los márgenes, por defecto 0.5em en todas direcciones
+// Recordar que margin, padding y propiedades similares usan dirección agujas del reloj
+// Arriba, derecha, abajo, izquierda
+@mixin margin ($top: 0.5em, $right: 0.5em, $bottom: 0.5em, $left: 0.5em) {
+    margin: $top $right $bottom $left;
+}
+
+// Creo un mixin para hacer padding
+@mixin padding ($top: 0.5em, $right: 0.5em, $bottom: 0.5em, $left: 0.5em) {
+    padding: $top $right $bottom $left;
+}
+
+// Creo un mixin para el ancho de los artículos
+@mixin articleWidth ($width) {
+    width: $width;
+}
+
+// Variables para distintos tamaños
+$xsmall: 576px;
+$small: 800px;
+$medium: 1024px;
+$large: 1200px;
+
+// Mixin para hacerlo responsive
+@mixin respond-to($size) {
+    @if $size == $large {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    } @else if $size == $medium {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $size == $small {
+        @media (max-width: 800px) {
+            @content;
+        }
+    } @else if $size == $xsmall {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}

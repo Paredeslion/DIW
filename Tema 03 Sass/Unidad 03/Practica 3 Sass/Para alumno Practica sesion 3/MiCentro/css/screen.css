@@ -1,0 +1,231 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(_mixins.scss);
+/* line 72, ../img/*.png */
+.img-sprite {
+  background-image: url('../img/../img-s420d1f08e7.png');
+  background-repeat: no-repeat;
+}
+
+/* line 5, ../sass/_contenido.scss */
+#contenido .col-left .login button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* line 14, ../sass/_contenido.scss */
+#contenido .col-left .login input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+/* line 24, ../sass/_contenido.scss */
+i {
+  background: url('../img/../img-sefcd2497b2.png');
+  display: inline-block;
+}
+
+/* line 30, ../sass/_contenido.scss */
+.icon-contact {
+  background-position: 0 0;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 30, ../sass/_contenido.scss */
+.icon-menu {
+  background-position: 0 -30px;
+  height: 50px;
+  width: 54px;
+}
+
+/* line 30, ../sass/_contenido.scss */
+.icon-news {
+  background-position: 0 -80px;
+  height: 30px;
+  width: 39px;
+}
+
+/* line 30, ../sass/_contenido.scss */
+.icon-studies {
+  background-position: 0 -110px;
+  height: 30px;
+  width: 44px;
+}
+
+/* line 36, ../sass/_contenido.scss */
+#contenido {
+  padding: 30px 20px;
+}
+/* line 39, ../sass/_contenido.scss */
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  /* line 39, ../sass/_contenido.scss */
+  #contenido .col-left {
+    float: none;
+    width: 100%;
+  }
+}
+/* line 58, ../sass/_contenido.scss */
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+/* line 63, ../sass/_contenido.scss */
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 800px) {
+  /* line 58, ../sass/_contenido.scss */
+  #contenido .col-right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 73, ../sass/_contenido.scss */
+#contenido .button-action {
+  background-color: #15a;
+  color: white;
+}
+/* line 76, ../sass/_contenido.scss */
+#contenido .button-action :hover {
+  background-color: #3686eb;
+}
+@media (max-width: 1024px) {
+  /* line 36, ../sass/_contenido.scss */
+  #contenido {
+    padding: 10px 20px;
+  }
+}
+
+/* line 4, ../sass/_menu.scss */
+nav {
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1024px) {
+  /* line 4, ../sass/_menu.scss */
+  nav {
+    display: none;
+  }
+}
+/* line 12, ../sass/_menu.scss */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 18, ../sass/_menu.scss */
+nav > ul {
+  width: 100%;
+  height: 32px;
+  color: #eee;
+  background-color: #15a;
+}
+/* line 25, ../sass/_menu.scss */
+nav .categoria {
+  float: left;
+}
+/* line 29, ../sass/_menu.scss */
+nav .categoria > a {
+  -webkit-transition: padding 0.4s ease-out;
+  -moz-transition: padding 0.4s ease-out;
+  transition: padding 0.4s ease-out;
+}
+/* line 35, ../sass/_menu.scss */
+nav .categoria > a:hover {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+/* line 40, ../sass/_menu.scss */
+nav .categoria:hover .submenu {
+  height: 100px;
+}
+/* line 44, ../sass/_menu.scss */
+nav .categoria .submenu {
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+}
+/* line 53, ../sass/_menu.scss */
+nav a {
+  color: #eee;
+  background-color: #15a;
+  text-decoration: none;
+  width: 160px;
+  padding-top: 7px;
+  padding-right: 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 65, ../sass/_menu.scss */
+nav a:hover {
+  color: white;
+  background-color: #166cd8;
+  -webkit-animation: iluminar 0.4s linear;
+  -moz-animation: iluminar 0.4s linear;
+  animation: iluminar 0.4s linear;
+}
+
+@keyframes iluminar {
+  from {
+    color: #eee;
+    background-color: #15a;
+  }
+  to {
+    color: white;
+    background-color: #166cd8;
+  }
+}
+/* line 34, ../sass/screen.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 39, ../sass/screen.scss */
+header {
+  padding-top: 12px;
+  padding-right: 30px;
+  color: #444;
+  font-size: 1.8em;
+  background-color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* line 50, ../sass/screen.scss */
+footer {
+  color: #eee;
+  background-color: #15a;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}

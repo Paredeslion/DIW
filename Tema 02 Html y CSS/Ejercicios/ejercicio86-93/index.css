@@ -1,0 +1,48 @@
+/* Hacer todos los párrafos que aparecen en las páginas 86-93 y ponerlos en una o varias páginas web,
+ y entregarlos tal como dicen los apuntes, estudiándolos.
+
+No hace falta que sean los mismos párrafos, pero si que tengan 3 ó 4 líneas.  */
+
+/* Autor: Raúl Gonzálvez Mondéjar */
+
+#noFloat {
+
+}
+
+#floatLeft {
+    float: left;
+}
+
+#floatRight {
+    float:right
+}
+
+img.izquierda {
+    float: left;
+}
+
+img.derecha {
+    float: right;
+}
+
+img {
+    float: left;
+}
+
+hr {
+    clear: both;
+}
+
+div {
+    border: black 3px solid;
+}
+
+p.limpia {
+    clear: both;
+}
+
+#ultimo {
+    border: black 3px solid;
+    height: 1%;
+    overflow: hidden;
+}
